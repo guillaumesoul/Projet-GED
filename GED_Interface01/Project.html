@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta name="robots" content="noindex,nofollow" />
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" /> <!-- RESET -->
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" /> <!-- MAIN STYLE SHEET -->
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" /> <!-- DEFAULT: 2 COLUMNS -->
+	<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" /> <!-- ALTERNATE: 1 COLUMN -->
+	<!--[if lte IE 6]><link rel="stylesheet" media="screen,projection" type="text/css" href="css/main-ie6.css" /><![endif]--> <!-- MSIE6 -->
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" /> <!-- GRAPHIC THEME -->
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/mystyle.css" /> <!-- WRITE YOUR CSS CODE HERE -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/switcher.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
+	<script type="text/javascript" src="js/ui.core.js"></script>
+	<script type="text/javascript" src="js/ui.tabs.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tabs > ul").tabs();
+	});
+	</script>
+	<title>Adminizio Lite</title>
+</head>
+
+<body>
+
+<div id="main">
+
+	<!-- Tray -->
+	<div id="tray" class="box">
+
+		<p class="f-left box">
+
+			<!-- Switcher -->
+			<span class="f-left" id="switcher">
+				<a href="#" rel="1col" class="styleswitch ico-col1" title="Display one column"><img src="design/switcher-1col.gif" alt="1 Column" /></a>
+				<a href="#" rel="2col" class="styleswitch ico-col2" title="Display two columns"><img src="design/switcher-2col.gif" alt="2 Columns" /></a>
+			</span>
+
+			Project: <strong>Your Project</strong>
+
+		</p>
+
+		<p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="#" id="logout">Log out</a></strong></p>
+
+	</div> <!--  /tray -->
+
+	<hr class="noscreen" />
+
+	<!-- Menu -->
+	<div id="menu" class="box">
+
+		<ul class="box f-right">
+			<li><a href="#"><span><strong>Profile </strong></span></a></li>
+		</ul>
+
+		<ul class="box">
+			<li id="menu-active"><a href="Document_index.html"><span>Document </span></a></li> <!-- Active -->
+<li><a href="Project_index.html"><span>Project</span></a></li>
+<li><a href="Workflow_index.html"><span>Workflow</span></a></li>
+<li><a href="Bordereau_index.html"><span>Bordereau</span></a></li>
+<li><a href="Administration_index.html"><span>Administration</span></a></li>
+			<li><a href="#"><span>Preferences</span></a></li>
+			<li><a href="#"><span>Contact</span></a></li>
+            <li><a href="#"><span>Basket</span></a></li>
+		</ul>
+
+	</div> <!-- /header -->
+
+	<hr class="noscreen" />
+
+	<!-- Columns -->
+	<div id="cols" class="box">
+
+		<!-- Aside (Left Column) -->
+		<div id="aside" class="box">
+
+			<div class="padding box">
+
+				<!-- Logo (Max. width = 200px) -->
+				<p id="logo"><a href="#"><img src="tmp/logo.gif" alt="Our logo" title="Visit Site" /></a></p>
+
+				<!-- Search -->
+				<form action="#" method="get" id="search">
+					<fieldset>
+						<legend>Search</legend>
+
+						<p><input type="text" size="17" name="" class="input-text" />&nbsp;<input type="submit" value="OK" class="input-submit-02" /><br />
+						<a href="Advanced_search.html" class="ico-drop">Advanced search</a></p>
+
+						<!-- Advanced search -->
+						<div id="search-options" style="display:none;">
+
+							<p>
+								<label><input type="checkbox" name="" checked="checked" /> Option I.</label><br />
+								<label><input type="checkbox" name="" /> Option II.</label><br />
+								<label><input type="checkbox" name="" /> Option III.</label>
+							</p>
+
+						</div> <!-- /search-options -->
+
+					</fieldset>
+				</form>
+
+				<!-- Create a new project -->
+				<p id="btn-create" class="box"><a href="#"><span>Create a new project</span></a></p>
+
+			</div> <!-- /padding -->
+
+			<ul class="box">
+				<li><a href="#">Applicable documents</a></li>
+				<li><a href="#">Reference documents</a></li>
+				<li><a href="#">Templates</a></li>
+				<li id="submenu-active"><a href="#">Transmittal forms (SN)</a> <!-- Active -->
+					<ul>
+						<li><a href="#">sub menu</a></li>
+						<li><a href="#">sub menu</a></li>
+						<li><a href="#">sub menu</a></li>
+					</ul>
+				</li>
+                <li><a href="#">Hands Outs (HO)</a></li>
+                <li><a href="#">External Meeting Report (MM)</a></li>
+				<li><a href="#">Internal Meeting Report (CRR)</a></li>
+				<li><a href="#">Quality Assurance</a></li>
+				<li><a href="#">Drawing Transmittals</a></li>	
+				<li><a href="#">SubContractors Documents</a></li>
+				<li><a href="#">Documentation management</a>
+					<ul>
+						<li><a href="#">sub menu</a></li>
+						<li><a href="#">sub menu</a></li>
+						<li><a href="#">sub menu</a></li>
+					</ul>
+                </li>
+				<li><a href="#">Lorem ipsum</a></li>
+			</ul>
+
+		</div> <!-- /aside -->
+
+		<hr class="noscreen" />
+
+		<!-- Content (Right Column) -->
+		<div id="content" class="box">
+
+			<div id="menu" class="box">
+
+		<ul class="box">
+			<li id="menu-active"><a href="#"><span>Add document</span></a></li> <!-- Active -->
+            <li><a href="#"><span>Remove document</span></a></li>
+			<li><a href="#"><span>Export</span></a></li>
+			<li><a href="#"><span>Edit project</span></a></li>
+		</ul>
+
+	</div>
+    <div>
+    <h3 class="tit">Project information</h3>
+            
+            		<fieldset>
+				<legend>Information</legend>
+				<table class="nostyle">
+					<tr>
+						<td style="width:140px;">List documents</td>
+                            <td>
+                                <a href="#"><span>Open</span></a>
+                            </td>
+					</tr>
+					<tr>
+						<td>Name Project:</td>
+						<td>Lorem ipsum</td>
+					</tr>
+					<tr>
+						<td>Designation:</td>
+						<td>Lorem ipsum</td>
+					</tr>
+                    <tr>
+						<td>Number of documents:</td>
+						<td>Lorem ipsum</td>
+					</tr>
+                    <tr>
+						<td>Workflow:</td>
+						<td>Lorem ipsum</td>
+					</tr>
+                    <tr>
+                    <td>
+                                <label>
+                                    Auteur</label>
+                            </td>
+                            <td>
+                                Lorem ipsum
+                            </td>
+                            </tr>
+				</table>
+			</fieldset>
+
+	<hr class="noscreen" />
+
+	<!-- Footer -->
+	<div id="footer" class="box">
+
+		<p class="f-left">&copy; 2009 <a href="#">Your Company</a>, All Rights Reserved &reg;</p>
+
+		<p class="f-right">Templates by <a href="http://www.adminizio.com/">Adminizio</a></p>
+
+	</div> <!-- /footer -->
+
+</div> <!-- /main -->
+
+</body>
+</html>
