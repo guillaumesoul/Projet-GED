@@ -1,0 +1,21 @@
+/* Connexion */
+form {
+    width: 325px;
+    margin: auto;
+    text-align: right;
+}
+
+form h1 {
+    text-align: center;
+}
+
+#btn_connect {
+    text-align: center
+}
+
+.error {
+    font-size: 0.7em;
+    color: red;
+}
+
+/* Home */
